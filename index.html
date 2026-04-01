@@ -893,6 +893,95 @@
       border-color: var(--fg)
     }
 
+    /* ═══ COLLAB HIGHLIGHTS ═══ */
+    .collab-section {
+      padding: var(--gap) clamp(2rem, 5vw, 6rem) 0
+    }
+
+    .collab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem
+    }
+
+    .collab-item {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      padding: 1.4rem
+    }
+
+    .collab-item h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      margin-bottom: .45rem
+    }
+
+    .collab-item p {
+      color: var(--muted);
+      font-size: .93rem;
+      line-height: 1.7
+    }
+
+    /* ═══ CX ═══ */
+    .cx-section {
+      padding: var(--gap) clamp(2rem, 5vw, 6rem)
+    }
+
+    .cx-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: stretch;
+      margin-top: 2rem
+    }
+
+    @media(max-width:900px) {
+      .cx-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .cx-copy {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      padding: 2rem
+    }
+
+    .cx-copy p {
+      color: var(--muted);
+      font-size: .96rem;
+      line-height: 1.8
+    }
+
+    .cx-photo {
+      min-height: 320px;
+      border: 1px solid var(--card-border);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden
+    }
+
+    .cx-photo::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 13, 16, .7), rgba(10, 13, 16, .15))
+    }
+
+    .cx-photo-label {
+      position: absolute;
+      left: 1rem;
+      bottom: .9rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .62rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--fg);
+      z-index: 1
+    }
+
     /* ═══ CTA ═══ */
     .cta-section {
       padding: var(--gap) clamp(2rem, 5vw, 6rem);
@@ -1367,6 +1456,54 @@
       <div class="lang-name">Portuguese</div>
     </div>
   </div>
+
+  <!-- ═══ PREVIOUS COLLABORATIONS ═══ -->
+  <section class="collab-section fade-in" id="collaborations">
+    <div class="section-label">Previous Collaborations</div>
+    <div class="section-title">Where I Have Raced<br>and Reported</div>
+    <div class="collab-grid">
+      <article class="collab-item">
+        <h3>UVM Cycling Team</h3>
+        <p>Raced at the collegiate level with the UVM Cycling Team, developing race craft in competitive US university
+          racing.</p>
+      </article>
+      <article class="collab-item">
+        <h3>Nantes NDVS</h3>
+        <p>Raced at French national level with Nantes NDVS, competing in high-level domestic events and elite race
+          programs.</p>
+      </article>
+      <article class="collab-item">
+        <h3>WATT Cycling</h3>
+        <p>Currently racing with WATT Cycling and staying active in FFC competition throughout the season.</p>
+      </article>
+      <article class="collab-item">
+        <h3>ASO &amp; Van Rysel Roubaix</h3>
+        <p>Worked with ASO as a journalist and had race-day access in the Van Rysel Roubaix team car for
+          behind-the-scenes coverage.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══ CX MANAGEMENT ═══ -->
+  <section class="cx-section" id="cx">
+    <div class="fade-in">
+      <div class="section-label">Cyclocross</div>
+      <div class="section-title">CX — Athlete Management</div>
+      <div class="cx-grid">
+        <article class="cx-copy fade-in">
+          <p>I have been an athlete manager on the CX European race tour, coordinating athlete support and race
+            logistics across multiple events and countries. I supported them on nutrition, language barriers and helping
+            with their mechanical needs. I provided logistical support for each event. Together with the athleets we
+            build race progams at elite amateur level and pro level. Speaking 6 languages fluently helped a lot on
+            hectic race days.</p>
+        </article>
+        <div class="cx-photo fade-in"
+          style="background-image:url('pictures/Screenshot 2026-04-01 at 17-44-27 Instagram.png')">
+          <div class="cx-photo-label">CX European Race Tour</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ═══ COLLABORATION TARGETS ═══ -->
   <section class="brands-section fade-in">
